@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         result = []
@@ -13,5 +14,5 @@ class Solution:
                 result.append("Buzz")
             else:
                 result.append(str(i))
- 
+
         return result
