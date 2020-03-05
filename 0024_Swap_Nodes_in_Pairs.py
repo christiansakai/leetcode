@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def swapPairs(self, head: ListNode) -> ListNode:
         if head is None:
@@ -13,10 +14,10 @@ class Solution:
             return head
 
         sub_prob = self.swapPairs(head.next.next)
-        
+
         temp_head = head
         head = head.next
-        head.next = temp_head 
-        head.next.next = sub_prob 
-        
+        head.next = temp_head
+        head.next.next = sub_prob
+
         return head

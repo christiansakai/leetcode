@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def searchBST(self, root: TreeNode, val: int) -> TreeNode:
         if root is None:
@@ -12,5 +13,9 @@ class Solution:
 
         if root.val == val:
             return root
-        
-        return self.searchBST(root.left, val) or self.searchBST(root.right, val)
+
+        return self.searchBST(
+            root.left,
+            val) or self.searchBST(
+            root.right,
+            val)

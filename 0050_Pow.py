@@ -1,16 +1,17 @@
 from typing import Dict
 
+
 class Solution:
     def myPow(self, x: float, n: int) -> float:
         cache = {}
-        power = abs(n) 
+        power = abs(n)
         result = self.recurse(x, power, cache)
-        
+
         if n < 0:
             return 1 / result
-        
+
         return result
-    
+
     def recurse(self, x: float, n: int, cache: Dict[int, float]) -> float:
         if n == 0:
             return 1
@@ -23,7 +24,7 @@ class Solution:
             sub_prob = self.recurse(x, n / 2, cache)
             result = sub_prob * sub_prob
         else:
-            result = x * self.recurse(x, n - 1, cache)    
-            
+            result = x * self.recurse(x, n - 1, cache)
+
         cache[n] = result
-        return cache[n] 
+        return cache[n]
