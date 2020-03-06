@@ -5,14 +5,15 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     # Recursive
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         result = []
-        
+
         self.recurse(root, result)
         return result
-    
+
     def recurse(self, root: TreeNode, result: List[int]):
         if root is None:
             return
@@ -20,7 +21,7 @@ class Solution:
         result.append(root.val)
         self.recurse(root.left, result)
         self.recurse(root.right, result)
-        
+
     # Iterative
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         if root is None:
@@ -40,6 +41,3 @@ class Solution:
                 stack.append(node.left)
 
         return result
-
-
-

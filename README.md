@@ -35,6 +35,8 @@ Iterative
 - Symmetric Tree
 - Iterative
 
+- Implement Trie
+
 # Useful Patterns
 # ASCII
 
