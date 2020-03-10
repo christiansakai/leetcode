@@ -35,6 +35,12 @@ Iterative
 - Symmetric Tree
 - Iterative
 
+- Populating Next Right Pointers in Each Node
+- Recursive
+
+- Populating Next Right Pointers in Each Node II
+- Recursive
+
 # Useful Patterns
 # ASCII
 
