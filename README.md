@@ -35,11 +35,15 @@ Iterative
 - Symmetric Tree
 - Iterative
 
+<<<<<<< HEAD
 - Populating Next Right Pointers in Each Node
 - Recursive
 
 - Populating Next Right Pointers in Each Node II
 - Recursive
+=======
+- Implement Trie
+>>>>>>> 8e5445952f75cbee99507c2a8a6ae7f3afca0ccd
 
 # Useful Patterns
 # ASCII
