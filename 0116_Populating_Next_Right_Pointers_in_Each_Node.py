@@ -7,6 +7,8 @@ class Node:
         self.right = right
         self.next = next
 """
+
+
 class Solution:
     # Iterative
     def connect(self, root: 'Node') -> 'Node':
@@ -16,16 +18,16 @@ class Solution:
         queue = [root]
         while len(queue) > 0:
             qlen = len(queue)
-            
+
             for i in range(0, qlen):
                 node = queue.pop(0)
                 if i < qlen - 1:
                     node.next = queue[0]
-                
+
                 if node.left:
                     queue.append(node.left)
-                    
+
                 if node.right:
                     queue.append(node.right)
-                    
+
         return root

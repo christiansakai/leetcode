@@ -9,10 +9,9 @@ class Solution:
             if nums[i] > largest:
                 largest = nums[i]
                 largest_idx = i
-                
-            
+
         for i in range(0, len(nums)):
-            if i != largest_idx and not(largest >= 2 * nums[i]): 
+            if i != largest_idx and not(largest >= 2 * nums[i]):
                 return -1
-           
-        return largest_idx 
+
+        return largest_idx
