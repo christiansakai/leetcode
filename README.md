@@ -37,6 +37,11 @@ Iterative
 
 - Implement Trie
 
+- Target Sum
+- Bottom up
+
+- Open the Lock
+
 # Useful Patterns
 # ASCII
 
