@@ -50,12 +50,107 @@ Iterative
 
 - Walls and Gates
 
+- Longest Substring Without Repeating Characters
+- Optimize it more
+-
+- Search in Rotated Sorted Array
+-
+- Reverse Integer
+-
+- Maximum Subarray
+-
+- Max Sliding Window
+- Optimize it
+-
+-
+- Word Break
+- Bottom Up
+
 # Useful Patterns
 # ASCII
 
 - '0' is 48
 - 'A' is 65
 - 'a' is 97
+
+# Python Libraries
+### Sorting List
+
+To sort list in place, use the built in `List.sort()` method.
+
+#### of Strings
+
+```python
+# Alphabetically ascending
+['hello', 'world'].sort()
+
+# Alphabetically but reversed (descending)
+['hello', 'world'].sort(reverse=True)
+```
+
+#### of Int
+
+```python
+# Ascending
+[4, 2, 1, 5, 2].sort()
+
+# Descending
+[5, 2, 1, 7, 2].sort(reverse=True)
+```
+
+#### Of Data Structures
+```python
+# Ascending
+age = lambda person: person[1]
+[('christian', 32'), ('yurie', 31)].sort(key=age)
+
+# Descending
+age = lambda person: person[1]
+[('christian', 32'), ('yurie', 31)].sort(key=age, reverse=True)
+```
+
+### Sorting Tuple
+
+To create a sorted copy of List or Tuples (because Tuples are immutable), use the built in function `sorted` method.
+
+#### of Strings
+
+```python
+# Alphabetically ascending
+sorted(['hello', 'world'])
+
+# Alphabetically but reversed (descending)
+sorted(['hello', 'world'], reverse=True)
+```
+
+#### of Int
+
+```python
+# Ascending
+sorted((4, 2, 1, 5, 2)
+
+# Descending
+sorted((5, 2, 1, 7, 2), reverse=True)
+```
+
+#### Of Data Structures
+
+```python
+# Ascending
+age = lambda person: person[1]
+sorted([('christian', 32'), ('yurie', 31)], key=age)
+
+# Descending
+age = lambda person: person[1]
+sorted([('christian', 32'), ('yurie', 31)], key=age, reverse=True)
+```
+
+## Heap
+
+Usea heapq (min heap)
+
+muiltiply -1 if want mx heap)
+
 
 # Sort
 # Merge Sort
@@ -118,28 +213,24 @@ func findSomeWindow(nums[]int) {
 # Binary Search
 # Pattern I
 
-```go
-func binarySearch(nums[]int, target int) int {
-    if len(nums) == 0 {
-        return -1
-    }
+```python
+import math
 
-    left: = 0
-    right: = len(nums) - 1
+def binary_search(nums: List[int], target: int) -> int:
+  left = 0
+  right = len(target) - 1
 
-    for left <= right {
-        mid: = left + (right - left) / 2
-        if nums[mid] == target {
-            return mid
-        } else if nums[mid] < target {
-            left = mid + 1
-        } else {
-            right = mid - 1
-        }
-    }
+  while left <= right:
+    mid = left + (math.floor((right - left) / 2))
 
-    return -1
-}
+    if nums[mid] == target:
+      return mid
+    elif nums[mid] < target:
+      left = mid + 1
+    else:
+      right = mid - 1
+
+  return -1
 ```
 
 Description:
