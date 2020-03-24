@@ -65,6 +65,12 @@ Iterative
 -
 - Word Break
 - Bottom Up
+-
+- Rotate Array
+- Optimize it
+-
+- Missing Number
+- Optimize it
 
 # Useful Patterns
 # ASCII
