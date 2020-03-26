@@ -71,6 +71,8 @@ Iterative
 -
 - Missing Number
 - Optimize it
+-
+- Sqrt X
 
 # Useful Patterns
 # ASCII
